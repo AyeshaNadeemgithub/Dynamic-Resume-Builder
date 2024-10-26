@@ -40,17 +40,17 @@ document.getElementById('resumeForm')?.addEventListener('submit', function (e) {
               <div class="profile-side">
                 <div class="profile-details">
                   <h2>Profile</h2>
-                  <p>${description}</p>
+                  <p contenteditable="true">${description}</p>
                 </div>
                 <div class="contact-details">
                   <h2>Contact</h2>
-                  <p>Email: ${email}</p>
-                  <p>Phone: ${phone}</p>
-                  <p>Website: ${website}</p>
+                  <p contenteditable="true">Email: ${email}</p>
+                  <p contenteditable="true">Phone: ${phone}</p>
+                  <p contenteditable="true">Website: ${website}</p>
                 </div>
                 <div class="hobbies">
                   <h2>Hobbies</h2>
-                  <ul>
+                  <ul contenteditable="true">
                     ${hobbies.map((hobby) => `<li>${hobby.trim()}</li>`).join("")}
                   </ul>
                 </div>
@@ -59,18 +59,18 @@ document.getElementById('resumeForm')?.addEventListener('submit', function (e) {
             
             <div class="right-column">
               <div class="name-job-title">
-                <h1>${name}</h1>
-                <p>${jobTitle}</p>
+                <h1 contenteditable="true">${name}</h1>
+                <p contenteditable="true">${jobTitle}</p>
               </div>
               <div class="section">
                 <h2>Academic Qualification</h2>
-                <ul>
+                <ul contenteditable="true">
                   ${education.map((edu) => `<li>${edu.trim()}</li>`).join("")}
                 </ul>
               </div>
               <div class="section">
                 <h2>Work Experience</h2>
-                <div class="section2">
+                <div class="section2" contenteditable="true">
                   <ul>
                     ${experience.map((exp) => `<li>${exp.trim()}</li>`).join("")}
                   </ul>
@@ -78,7 +78,7 @@ document.getElementById('resumeForm')?.addEventListener('submit', function (e) {
               </div>
               <div class="section">
                 <h2>Skills</h2>
-                <ul>
+                <ul contenteditable="true">
                   ${skills.map((skill) => `<li>${skill.trim()}</li>`).join("")}
                 </ul>
               </div>
